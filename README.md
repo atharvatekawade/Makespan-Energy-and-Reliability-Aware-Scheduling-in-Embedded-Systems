@@ -1,6 +1,6 @@
 # Makespan-Energy-and-Reliability-Aware-Scheduling-in-Embedded-Systems
 
-This problem is of scheduling applications modeled as a directed acyclic graph to minimize total execution time and energy consumption subject to reliability constraints in a multiprocessor embedded system. Our proposed methodology is compared with the following state-of-art algorithms:
+This problem is of scheduling applications modeled as a directed acyclic graph to minimize total execution time and energy consumption subject to reliability constraints in a multiprocessor embedded system. In particular, our algorithm performs better than others as reliability constraint gets tighter Our proposed methodology is compared with the following state-of-art algorithms
 
 1) (ODS, MR, LEC) Dynamic DAG Scheduling on Multiprocessor
 Systems: Reliability, Energy, and Makespan - Jing Huang
