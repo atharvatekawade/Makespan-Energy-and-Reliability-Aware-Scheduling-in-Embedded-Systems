@@ -11,3 +11,24 @@ Computer Engineering Department, Marmara University, Istanbul, Turkey
 ; S. Hariri; Min-You Wu: https://ieeexplore.ieee.org/document/993206
 
 ## Usage
+Clone the repositary and run the command: python main.py -num -itr -p -D -smin -smax, the arguments are explained below:
+
+1) num: Represents the number of nodes of an Epigenomics task graph.
+2) itr: Represents the number of iterations to run the algorithms, with average results reported at the end.
+3) pr: Represents the number of processors in our embedded system.
+4) R: Represents the deadline constraint as a factor w.r.t maximum reliability.
+5) smin: Represents the lower bound for task computation requirement and edge data.
+6) smax: Represents the upper bound for task computation requirement and edge data.
+7) ods_start: Represents the starting value of Θ in ODS.
+8) ods_end: Represents the ending value of Θ in ODS.
+9) ods_step: Represents the value of step from ods_start to ods_end.
+10) wanms_start: Represents the starting value of α in WANMS.
+11) wanms_end: Represents the ending value of α in WANMS.
+12) wanms_step: Represents the value of step from wanms_start to wanms_end.
+
+Upon running the command and successful execution, we get plots for the cost and makespan of different algorithms. The makespan plot also includes the deadline for reference.
+ Sample plots are shown below.
+
+## Results
+
+![Figure_1](https://user-images.githubusercontent.com/64606981/204050563-8500ed54-be62-449a-80d9-204407b059b6.png)
