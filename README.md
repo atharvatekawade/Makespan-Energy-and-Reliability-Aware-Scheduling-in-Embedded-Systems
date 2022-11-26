@@ -11,9 +11,9 @@ Computer Engineering Department, Marmara University, Istanbul, Turkey
 ; S. Hariri; Min-You Wu: https://ieeexplore.ieee.org/document/993206
 
 ## Usage
-Clone the repositary and run the command: python main.py -num -itr -p -D -smin -smax, the arguments are explained below:
+Clone the repositary and run the command: python main.py -rho -itr -pr -R -smin -smax -ods_start -ods_end -ods_step -wanms_start -wanms_end -wanms_step, the arguments are explained below:
 
-1) num: Represents the number of nodes of an Epigenomics task graph.
+1) rho: Represents the number of parameter for number of nodes of FFT Task graph: n = (2+rho)*2**rho - 1.
 2) itr: Represents the number of iterations to run the algorithms, with average results reported at the end.
 3) pr: Represents the number of processors in our embedded system.
 4) R: Represents the deadline constraint as a factor w.r.t maximum reliability.
