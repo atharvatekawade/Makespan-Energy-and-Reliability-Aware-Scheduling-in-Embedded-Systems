@@ -43,7 +43,7 @@ for gen in range(args.itr):
     fails = [0, 0, 0, 0, 0, 0]
     R = args.R*max_rel
     rel_constraint += R
-    print("Constraint:",R, max_rel)
+    print("Constraint:",R)
         
     alloc, _ = utils.heft()
     f1, r1, e1 = utils.simulate(alloc)
@@ -109,7 +109,7 @@ for gen in range(args.itr):
     print(f"Algo: ODS+SOEA No. of vertices: {len(config.graph)} Span: {f} Rel: {r} Energy: {e}")
         
 
-    if(f1 == float('inf')):
+    if(f == float('inf')):
         fails[4] += 1
         alloc, _ = utils.mr()
         freq = utils.soea1(alloc, R)
@@ -133,6 +133,10 @@ for gen in range(args.itr):
     results[5][2] += e
 
     print("\n")
+
+for i in range(len(results)):
+    for j in range(len(results[i])):
+        results[i][j] = results[i][j]/args.itr
 
 print(f"Algo: HEFT+SOEA No. of vertices: {len(config.graph)} Span: {results[0][0]} Rel: {results[0][1]} Energy: {results[0][2]} Fails: {fails[0]}")
 print(f"Algo: LEC+SOEA No. of vertices: {len(config.graph)} Span: {results[1][0]} Rel: {results[1][1]} Energy: {results[1][2]} Fails: {fails[1]}")
