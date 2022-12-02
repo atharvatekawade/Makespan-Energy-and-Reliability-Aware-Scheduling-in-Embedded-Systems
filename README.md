@@ -1,6 +1,6 @@
 # Makespan-Energy-and-Reliability-Aware-Scheduling-in-Embedded-Systems
 
-This problem is of scheduling applications modeled as a directed acyclic graph to minimize total execution time and energy consumption subject to reliability constraints in a multiprocessor embedded system. In particular, our algorithm performs better than others as reliability constraint gets tighter Our proposed methodology is compared with the following state-of-art algorithms
+This problem is of scheduling applications modeled as a directed acyclic graph to minimize total execution time and energy consumption subject to reliability constraints in a multiprocessor embedded system without fault-tolerance (each task is assigned a single processor). In particular, our algorithm (WANMS) performs better than others as reliability constraint gets tighter Our proposed methodology is compared with the following state-of-art algorithms:
 
 1) (ODS, MR, LEC) Dynamic DAG Scheduling on Multiprocessor
 Systems: Reliability, Energy, and Makespan - Jing Huang
@@ -9,6 +9,9 @@ College of Computer Science and Electronic Engineering, Hunan University, Changs
 2) (HEFT) Performance-effective and low-complexity task scheduling for heterogeneous computing - H. Topcuoglu
 Computer Engineering Department, Marmara University, Istanbul, Turkey
 ; S. Hariri; Min-You Wu: https://ieeexplore.ieee.org/document/993206
+3) (ESRG) Energy-Efficient Fault-Tolerant Scheduling of Reliable Parallel Applications on Heterogeneous Distributed Embedded Systems - Guoqi Xie
+College of Computer Science and Electronic Engineering, Hunan University, Hunan, China
+; Yuekun Chen; Xiongren Xiao; Cheng Xu; Renfa Li; Keqin Li: https://ieeexplore.ieee.org/document/7938375
 
 ## Usage
 Clone the repositary and run the command: python main.py -rho -itr -pr -R -smin -smax -ods_start -ods_end -ods_step -wanms_start -wanms_end -wanms_step, the arguments are explained below:
