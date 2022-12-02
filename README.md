@@ -19,7 +19,7 @@ Clone the repositary and run the command: python main.py -rho -itr -pr -R -smin 
 1) rho: Represents the number of parameter for number of nodes of FFT Task graph: n = (2+rho)*2**rho - 1.
 2) itr: Represents the number of iterations to run the algorithms, with average results reported at the end.
 3) pr: Represents the number of processors in our embedded system.
-4) R: Represents the deadline constraint as a factor w.r.t maximum reliability.
+4) R: Represents the reliability constraint as a factor w.r.t maximum reliability < 1.
 5) smin: Represents the lower bound for task computation requirement and edge data.
 6) smax: Represents the upper bound for task computation requirement and edge data.
 7) ods_start: Represents the starting value of Θ in ODS.
@@ -29,7 +29,8 @@ Clone the repositary and run the command: python main.py -rho -itr -pr -R -smin 
 11) wanms_end: Represents the ending value of α in WANMS.
 12) wanms_step: Represents the value of step from wanms_start to wanms_end.
 
-Upon running the command and successful execution, we get plots for the cost and makespan of different algorithms. The makespan plot also includes the deadline for reference.
+Upon running the command and successful execution, we get plots for the makespan and energy of different algorithms. 
+The reliability plot also includes the reliability constraint for reference. Leave all flags blank for running parameters with default values.
  Sample plots are shown below.
 
 ## Results
